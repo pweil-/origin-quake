@@ -1,0 +1,31 @@
+{
+  "kind": "Pod",
+  "apiVersion": "v1",
+  "metadata": {
+    "name": "openshift-quake",
+    "labels": {
+      "name": "openshift-quake"
+    }
+  },
+  "spec": {
+    "containers": [
+      {
+        "name": "openshift-quake",
+        "image": "pweil/origin-quake",
+        "ports": [
+          {
+            "containerPort": 8080,
+            "protocol": "TCP"
+          }
+        ],
+        "resources": {},
+        "terminationMessagePath": "/dev/termination-log",
+        "imagePullPolicy": "IfNotPresent",
+      }
+    ],
+    "restartPolicy": "Always",
+    "dnsPolicy": "ClusterFirst",
+  },
+  "status": {}
+}
+
