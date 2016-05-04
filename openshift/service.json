@@ -1,0 +1,20 @@
+{
+    "kind": "Service",
+    "apiVersion": "v1",
+    "metadata": {
+        "name": "origin-quake"
+    },
+    "spec": {
+        "ports": [
+            {
+                "name": "http",
+                "port": 8080,
+                "targetPort": 8080
+            }
+        ],
+        "selector": {
+            "name": "origin-quake"
+        }
+    }
+}
+

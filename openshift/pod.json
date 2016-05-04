@@ -2,15 +2,15 @@
   "kind": "Pod",
   "apiVersion": "v1",
   "metadata": {
-    "name": "openshift-quake",
+    "name": "origin-quake",
     "labels": {
-      "name": "openshift-quake"
+      "name": "origin-quake"
     }
   },
   "spec": {
     "containers": [
       {
-        "name": "openshift-quake",
+        "name": "origin-quake",
         "image": "pweil/origin-quake",
         "ports": [
           {
@@ -20,11 +20,11 @@
         ],
         "resources": {},
         "terminationMessagePath": "/dev/termination-log",
-        "imagePullPolicy": "IfNotPresent",
+        "imagePullPolicy": "IfNotPresent"
       }
     ],
     "restartPolicy": "Always",
-    "dnsPolicy": "ClusterFirst",
+    "dnsPolicy": "ClusterFirst"
   },
   "status": {}
 }

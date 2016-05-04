@@ -1,0 +1,14 @@
+ {
+      "kind": "Route",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "route1"
+      },
+      "spec": {
+        "to": {
+          "kind": "Service",
+          "name": "origin-quake"
+        }
+      }
+}
+
